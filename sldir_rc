@@ -1,0 +1,78 @@
+# Save and load directory.
+# Author: Zhou Shengsheng
+# Version: 0.0.1
+# Date: 24/05/18
+
+# Config
+SLDIR_HOME=${HOME}/.sldir
+SLDIR_RC=${SLDIR_HOME}/sldir_rc
+SLDIR_SAVED_DIR=${SLDIR_HOME}/saved_dir
+
+if [ ! -d ${SLDIR_SAVED_DIR} ]; then
+    mkdir -p ${SLDIR_SAVED_DIR}
+fi
+
+# Save directory function.
+# In command line, use sdir name to save current directory.
+function sdir() {
+    pwd > ${SLDIR_SAVED_DIR}/$1
+}
+
+# Load directory function.
+# In command line, use ldir name to cd to saved directory.
+function ldir() {
+    cd `cat ${SLDIR_SAVED_DIR}/$1`
+}
+
+# Delete a saved record.
+# In Command line, use ddir name to delete a record.
+function ddir() {
+    rm ${SLDIR_SAVED_DIR}/$1
+}
+
+# Print all saved directories.
+function sldir() {
+    if [ ! "$(ls ${SLDIR_SAVED_DIR})" ]; then
+        echo "No saved directory found"
+    else
+        for file in ${SLDIR_SAVED_DIR}/*;
+        do
+            printf "%8s: `cat ${file}`\n" ${file##*/}
+        done
+    fi
+}
+
+# Alias to print all saved directories.
+alias sl="sldir"
+
+# Aliases to save, load, delete directories records for slots 0-9.
+alias s0="sdir 0"
+alias l0="ldir 0"
+alias d0="ddir 0"
+alias s1="sdir 1"
+alias l1="ldir 1"
+alias d1="ddir 1"
+alias s2="sdir 2"
+alias l2="ldir 2"
+alias d2="ddir 2"
+alias s3="sdir 3"
+alias l3="ldir 3"
+alias d3="ddir 3"
+alias s4="sdir 4"
+alias l4="ldir 4"
+alias d4="ddir 4"
+alias s5="sdir 5"
+alias l5="ldir 5"
+alias d5="ddir 5"
+alias s6="sdir 6"
+alias l6="ldir 6"
+alias d6="ddir 6"
+alias s7="sdir 7"
+alias l7="ldir 7"
+alias d7="ddir 7"
+alias s8="sdir 8"
+alias l8="ldir 8"
+alias d8="ddir 8"
+alias s9="sdir 9"
+alias l9="ldir 9"
+alias d9="ddir 9"
