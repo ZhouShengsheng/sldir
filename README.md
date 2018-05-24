@@ -1,6 +1,6 @@
 # sldir
 
-`sldir` is a handy command line tool to save and load frequent access directories.
+`sldir` is a handy command line tool for unix-like systems to save and load frequently visited directories.
 
 ## Features
 
@@ -49,7 +49,7 @@ Examples:
   $ d2
   ```
 
-* Print All Saved Directories:
+* Print all saved directories:
 
   ```bash
   $ sl
