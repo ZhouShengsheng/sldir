@@ -86,13 +86,26 @@ Examples:
   $ ddir work
   ```
 
-* Print All Saved Directories:
+* Print all saved directories:
 
   ```bash
   $ sldir
   ```
 
 ## Installation
+
+1. Copy and paste the following command and run it in your terminal to quickly install:
+
+  ```bash
+  git clone https://github.com/ZhouShengsheng/sldir.git /tmp/sldir && cd /tmp/sldir && sh install.sh && cd - && rm -rf /tmp/sldir
+  ```
+
+2. Restart your terminal or source ~/.bash_profile or ~/.zshrc.
+
+## Supported Shell
+
+* Bash
+* Zsh
 
 ## License
 
