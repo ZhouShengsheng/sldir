@@ -5,7 +5,12 @@
 
 set -e
 
-DEST_PROFILE=${HOME}/.bash_profile
+if [[ ${SHELL} = *"zsh"* ]]; then
+  DEST_PROFILE=${HOME}/.zshrc
+else
+  DEST_PROFILE=${HOME}/.bash_profile
+fi
+
 SLDIR_HOME=${HOME}/.sldir
 SLDIR_RC=${SLDIR_HOME}/sldir_rc
 
