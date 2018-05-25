@@ -59,12 +59,12 @@ Examples:
 
   ![](images/img_sldir_sl.png)
 
-**3. Advanced Uses by Calling `sdir`, `ldir`, `ddir` and `sldir`**:
+**2. Advanced Uses by Calling `sdir`, `ldir`, `ddir` and `sldir`**:
 
 * `sdir name`: Save current directory to the given slot `name`;
 * `ldir name`: Load directory saved at `name` slot;
 * `ddir name`: Delete save saved at `name` slot;
-* `sldir`: Same as `sl`, print all saved dire.
+* `sldir`: Same as `sl`, print all saved directories.
 
 Examples:
 
