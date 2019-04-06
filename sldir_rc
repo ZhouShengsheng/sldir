@@ -22,8 +22,8 @@ function sdir() {
 # In command line, use ldir name to cd to saved directory.
 function ldir() {
     d=`cat ${SLDIR_SAVED_DIR}/$1`
-    # d=${d/ /\ }
-    cd ${d}
+    d=${d/ /\\ }
+    eval cd ${d}
 }
 
 # Delete a saved record.
