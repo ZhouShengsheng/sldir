@@ -94,13 +94,41 @@ Examples:
 
 ## Installation
 
+### Quick Installation
+
 1. Copy and paste the following command and run it in your terminal to quickly install:
 
   ```bash
-  git clone https://github.com/ZhouShengsheng/sldir.git /tmp/sldir && cd /tmp/sldir && sh install.sh && cd - && rm -rf /tmp/sldir
+  git clone https://github.com/ZhouShengsheng/sldir.git /tmp/sldir && cd /tmp/sldir && bash install.sh && cd - && rm -rf /tmp/sldir
   ```
 
-2. Restart your terminal or source ~/.bash_profile or ~/.zshrc.
+2. Restart your terminal or `source ~/.bash_profile` or `~/.zshrc`.
+
+If the quick installation failed, you might need to try the following manually installation.
+
+### Manually Installation
+
+1. Clone the repository:
+  
+  ```
+  git clone --depth 1 https://github.com/ZhouShengsheng/sldir.git
+  ```
+
+2. Run the `install.sh` script:
+  
+  ```
+  cd sldir
+  bash install.sh
+  ```
+
+3. Restart your terminal or `source ~/.bash_profile` or `~/.zshrc`.
+
+4. (Optional) Clean up:
+  
+  ```
+  cd ..
+  rm -rf sldir
+  ```
 
 ## Supported Shell
 
