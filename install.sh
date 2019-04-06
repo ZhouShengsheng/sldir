@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # sldir install script
 # Author: Zhou Shengsheng
 # Version: 0.0.1
@@ -23,3 +24,4 @@ if [ -f ${SLDIR_RC} ]; then
     . ${SLDIR_RC}
 fi
 " >> ${DEST_PROFILE}
+
