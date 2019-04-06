@@ -4,7 +4,7 @@
 
 ## Features
 
-**1. Quick Save and Load for 0-9 Slots**:
+### Quick Save and Load for 0-9 Slots
 
 * `s0` to `s9`: Save directories;
 * `l0` to `l9`: Load directories;
@@ -59,7 +59,7 @@ Examples:
 
   ![](images/img_sldir_sl.png)
 
-**2. Advanced Uses by Calling `sdir`, `ldir`, `ddir` and `sldir`**:
+### Advanced Uses by Calling `sdir`, `ldir`, `ddir` and `sldir`**
 
 * `sdir name`: Save current directory to the given slot `name`;
 * `ldir name`: Load directory saved at `name` slot;
@@ -109,22 +109,22 @@ If the quick installation failed, you might need to try the following manually i
 ### Manually Installation
 
 1. Clone the repository:
-  
+
   ```
   git clone --depth 1 https://github.com/ZhouShengsheng/sldir.git
   ```
 
 2. Run the `install.sh` script:
-  
+
   ```
   cd sldir
-  bash install.sh
+  ./install.sh
   ```
 
 3. Restart your terminal or `source ~/.bash_profile` or `~/.zshrc`.
 
 4. (Optional) Clean up:
-  
+
   ```
   cd ..
   rm -rf sldir
@@ -138,3 +138,4 @@ If the quick installation failed, you might need to try the following manually i
 ## License
 
 `sldir` is released under the MIT license. See [LICENSE](LICENSE) for details.
+
