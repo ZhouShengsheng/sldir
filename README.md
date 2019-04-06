@@ -104,9 +104,9 @@ Examples:
 
 2. Restart your terminal or `source ~/.bash_profile` or `~/.zshrc`.
 
-If the quick installation failed, you might need to try the following manually installation.
+If the quick installation failed, you might need to try the following manual installation.
 
-### Manually Installation
+### Manual Installation
 
 1. Clone the repository:
 
